@@ -1,0 +1,14 @@
+G:\myproject\gateway\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\AuthPlatform.TestService.deps.json
+G:\myproject\gateway\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\AuthPlatform.TestService.runtimeconfig.json
+G:\myproject\gateway\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\AuthPlatform.TestService.runtimeconfig.dev.json
+G:\myproject\gateway\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\AuthPlatform.TestService.dll
+G:\myproject\gateway\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\AuthPlatform.TestService.pdb
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.csproj.CoreCompileInputs.cache
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.RazorAssemblyInfo.cache
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.RazorAssemblyInfo.cs
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.AssemblyInfoInputs.cache
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.AssemblyInfo.cs
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.RazorTargetAssemblyInfo.cache
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.dll
+G:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.pdb
+g:\myproject\gateway\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.csprojAssemblyReference.cache

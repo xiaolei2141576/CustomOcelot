@@ -1,0 +1,17 @@
+G:\myproject\gateway\Ocelot\bin\Debug\netcoreapp2.1\CustomOcelot.deps.json
+G:\myproject\gateway\Ocelot\bin\Debug\netcoreapp2.1\CustomOcelot.dll
+G:\myproject\gateway\Ocelot\obj\Debug\netcoreapp2.1\CustomOcelot.csprojAssemblyReference.cache
+G:\myproject\gateway\Ocelot\obj\Debug\netcoreapp2.1\CustomOcelot.csproj.CoreCompileInputs.cache
+G:\myproject\gateway\Ocelot\obj\Debug\netcoreapp2.1\CustomOcelot.AssemblyInfoInputs.cache
+G:\myproject\gateway\Ocelot\obj\Debug\netcoreapp2.1\CustomOcelot.AssemblyInfo.cs
+G:\myproject\gateway\Ocelot\bin\Debug\netcoreapp2.1\CustomOcelot.pdb
+G:\myproject\gateway\Ocelot\obj\Debug\netcoreapp2.1\CustomOcelot.dll
+G:\myproject\gateway\Ocelot\obj\Debug\netcoreapp2.1\CustomOcelot.pdb
+G:\myproject\gateway\CustomOcelot\bin\Debug\netcoreapp2.1\CustomOcelot.deps.json
+G:\myproject\gateway\CustomOcelot\bin\Debug\netcoreapp2.1\CustomOcelot.dll
+G:\myproject\gateway\CustomOcelot\bin\Debug\netcoreapp2.1\CustomOcelot.pdb
+G:\myproject\gateway\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.csproj.CoreCompileInputs.cache
+G:\myproject\gateway\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.AssemblyInfoInputs.cache
+G:\myproject\gateway\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.AssemblyInfo.cs
+G:\myproject\gateway\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.dll
+G:\myproject\gateway\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.pdb
