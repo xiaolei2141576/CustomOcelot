@@ -11668,11 +11668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\myproject\\gateway\\Ids4Test\\Ids4Test.csproj",
+      "projectUniqueName": "G:\\myproject\\CustomOcelot\\Ids4Test\\Ids4Test.csproj",
       "projectName": "Ids4Test",
-      "projectPath": "G:\\myproject\\gateway\\Ids4Test\\Ids4Test.csproj",
+      "projectPath": "G:\\myproject\\CustomOcelot\\Ids4Test\\Ids4Test.csproj",
       "packagesPath": "C:\\Users\\zl\\.nuget\\packages\\",
-      "outputPath": "G:\\myproject\\gateway\\Ids4Test\\obj\\",
+      "outputPath": "G:\\myproject\\CustomOcelot\\Ids4Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

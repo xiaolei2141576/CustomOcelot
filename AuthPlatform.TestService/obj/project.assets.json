@@ -11507,11 +11507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\myproject\\gateway\\AuthPlatform.TestService\\AuthPlatform.TestService.csproj",
+      "projectUniqueName": "G:\\myproject\\CustomOcelot\\AuthPlatform.TestService\\AuthPlatform.TestService.csproj",
       "projectName": "AuthPlatform.TestService",
-      "projectPath": "G:\\myproject\\gateway\\AuthPlatform.TestService\\AuthPlatform.TestService.csproj",
+      "projectPath": "G:\\myproject\\CustomOcelot\\AuthPlatform.TestService\\AuthPlatform.TestService.csproj",
       "packagesPath": "C:\\Users\\zl\\.nuget\\packages\\",
-      "outputPath": "G:\\myproject\\gateway\\AuthPlatform.TestService\\obj\\",
+      "outputPath": "G:\\myproject\\CustomOcelot\\AuthPlatform.TestService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

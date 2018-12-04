@@ -1,4 +1,5 @@
 ﻿using CustomOcelot.Authentication.Middleware;
+using CustomOcelot.RateLimit.Middleware;
 using Ocelot.Authorisation.Middleware;
 using Ocelot.Cache.Middleware;
 using Ocelot.DownstreamRouteFinder.Middleware;
@@ -93,8 +94,10 @@ namespace CustomOcelot.Middleware
                 builder.Use(pipelineConfiguration.AuthenticationMiddleware);
             }
 
-            //添加自定义授权中间
+            //添加自定义授权中间件
             builder.UseAuthenticationMiddleware();
+            //添加自定义限流中间件
+            builder.UseClientRateLimitMiddleware();
 
             // Allow pre authorisation logic. The idea being people might want to run something custom before what is built in.
             builder.UseIfNotNull(pipelineConfiguration.PreAuthorisationMiddleware);

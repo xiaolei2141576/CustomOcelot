@@ -42,8 +42,9 @@ namespace AuthPlatform.Gateway
             services.AddOcelot().AddCustomOcelot(option =>
             {
                 option.DbConnectionStrings = "Server=.;Database=Gateway;User ID=sa;Password=123456789;";
+                option.RedisDbConnectionStrings = new List<string>() { "193.112.82.53:6379,defaultDatabase=0,poolsize=50,ssl=false,writeBuffer=10240,connectTimeout=1000,connectRetry=1;" };
                 option.EnableTimer = true;
-                option.TimerDelay = 5 * 1000;
+                //option.TimerDelay = 5 * 1000; 
                 option.ClientAuthorization = true;
             }).AddAdministration("/CustomOcelot", options);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

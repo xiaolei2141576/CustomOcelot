@@ -12144,11 +12144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\myproject\\gateway\\AuthPlatform.Gateway\\AuthPlatform.Gateway.csproj",
+      "projectUniqueName": "G:\\myproject\\CustomOcelot\\AuthPlatform.Gateway\\AuthPlatform.Gateway.csproj",
       "projectName": "AuthPlatform.Gateway",
-      "projectPath": "G:\\myproject\\gateway\\AuthPlatform.Gateway\\AuthPlatform.Gateway.csproj",
+      "projectPath": "G:\\myproject\\CustomOcelot\\AuthPlatform.Gateway\\AuthPlatform.Gateway.csproj",
       "packagesPath": "C:\\Users\\zl\\.nuget\\packages\\",
-      "outputPath": "G:\\myproject\\gateway\\AuthPlatform.Gateway\\obj\\",
+      "outputPath": "G:\\myproject\\CustomOcelot\\AuthPlatform.Gateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12167,8 +12167,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "G:\\myproject\\gateway\\CustomOcelot\\CustomOcelot.csproj": {
-              "projectPath": "G:\\myproject\\gateway\\CustomOcelot\\CustomOcelot.csproj"
+            "G:\\myproject\\CustomOcelot\\CustomOcelot\\CustomOcelot.csproj": {
+              "projectPath": "G:\\myproject\\CustomOcelot\\CustomOcelot\\CustomOcelot.csproj"
             }
           }
         }
