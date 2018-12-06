@@ -30,14 +30,20 @@ namespace AuthPlatform.Gateway
         public void ConfigureServices(IServiceCollection services)
         {
             var authenticationProviderKey = "TestKey";
+            Action<IdentityServerAuthenticationOptions> gatewayoptions = o =>
+            {
+                o.Authority = "http://localhost:6611";
+                o.ApiName = "gateway";
+                o.RequireHttpsMetadata = false;
+            };
+            services.AddAuthentication()
+                .AddIdentityServerAuthentication(authenticationProviderKey, gatewayoptions);
             Action<IdentityServerAuthenticationOptions> options = o =>
             {
                 o.Authority = "http://localhost:6611"; //IdentityServer地址
                 o.RequireHttpsMetadata = false;
-                o.ApiName = "gateway"; //网关管理的名称，对应的为客户端授权的scope
+                o.ApiName = "gateway_admin"; //网关管理的名称，对应的为客户端授权的scope
             };
-            services.AddAuthentication()
-                .AddIdentityServerAuthentication(authenticationProviderKey, options);
             //注册ocelot服务
             services.AddOcelot().AddCustomOcelot(option =>
             {
@@ -46,8 +52,9 @@ namespace AuthPlatform.Gateway
                 option.EnableTimer = true;
                 //option.TimerDelay = 5 * 1000; 
                 option.ClientAuthorization = true;
+                option.ClientRateLimit = true;
             }).AddAdministration("/CustomOcelot", options);
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,7 +69,7 @@ namespace AuthPlatform.Gateway
                 app.UseExceptionHandler("/Error");
             }
             app.UseCustomOcelot().Wait();
-            app.UseMvc();
+            //app.UseMvc();
         }
     }
 }

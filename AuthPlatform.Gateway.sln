@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthPlatform.TestService", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomOcelot", "CustomOcelot\CustomOcelot.csproj", "{46F2F586-5E63-4F7A-A287-8F66B0836B56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ids4Test", "Ids4Test\Ids4Test.csproj", "{48726964-D7E9-41FE-990A-C6730AFAB161}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ids4Test", "Ids4Test\Ids4Test.csproj", "{48726964-D7E9-41FE-990A-C6730AFAB161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4.Dapper", "IdentityServer4.Dapper\IdentityServer4.Dapper.csproj", "{56D6109D-EB58-4849-A5A3-FE8FC51F4CA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{48726964-D7E9-41FE-990A-C6730AFAB161}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48726964-D7E9-41FE-990A-C6730AFAB161}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48726964-D7E9-41FE-990A-C6730AFAB161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D6109D-EB58-4849-A5A3-FE8FC51F4CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D6109D-EB58-4849-A5A3-FE8FC51F4CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D6109D-EB58-4849-A5A3-FE8FC51F4CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D6109D-EB58-4849-A5A3-FE8FC51F4CA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
