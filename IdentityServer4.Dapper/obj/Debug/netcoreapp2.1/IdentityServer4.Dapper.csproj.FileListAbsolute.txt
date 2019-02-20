@@ -1,0 +1,9 @@
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\bin\Debug\netcoreapp2.1\IdentityServer4.Dapper.deps.json
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\bin\Debug\netcoreapp2.1\IdentityServer4.Dapper.dll
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\bin\Debug\netcoreapp2.1\IdentityServer4.Dapper.pdb
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\obj\Debug\netcoreapp2.1\IdentityServer4.Dapper.csprojAssemblyReference.cache
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\obj\Debug\netcoreapp2.1\IdentityServer4.Dapper.csproj.CoreCompileInputs.cache
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\obj\Debug\netcoreapp2.1\IdentityServer4.Dapper.AssemblyInfoInputs.cache
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\obj\Debug\netcoreapp2.1\IdentityServer4.Dapper.AssemblyInfo.cs
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\obj\Debug\netcoreapp2.1\IdentityServer4.Dapper.dll
+G:\myproject\CustomOcelot\IdentityServer4.Dapper\obj\Debug\netcoreapp2.1\IdentityServer4.Dapper.pdb
