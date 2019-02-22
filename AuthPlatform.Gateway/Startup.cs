@@ -38,23 +38,23 @@ namespace AuthPlatform.Gateway
             };
             services.AddAuthentication()
                 .AddIdentityServerAuthentication(authenticationProviderKey, gatewayoptions);
-            Action<IdentityServerAuthenticationOptions> options = o =>
-            {
-                o.Authority = "http://localhost:6611"; //IdentityServer地址
-                o.RequireHttpsMetadata = false;
-                o.ApiName = "gateway_admin"; //网关管理的名称，对应的为客户端授权的scope
-            };
+            //Action<IdentityServerAuthenticationOptions> options = o =>
+            //{
+            //    o.Authority = "http://localhost:6611"; //IdentityServer地址
+            //    o.RequireHttpsMetadata = false;
+            //    o.ApiName = "gateway_admin"; //网关管理的名称，对应的为客户端授权的scope
+            //};
             //注册ocelot服务
             services.AddOcelot().AddCustomOcelot(option =>
             {
                 option.DbConnectionStrings = "Server=.;Database=Gateway;User ID=sa;Password=123456789;";
-                option.RedisDbConnectionStrings = new List<string>() { "193.112.82.53:6379,defaultDatabase=0,poolsize=50,ssl=false,writeBuffer=10240,connectTimeout=1000,connectRetry=1;" };
+                option.RedisDbConnectionStrings = new List<string>() { "127.0.0.1:6379,defaultDatabase=0,poolsize=50,ssl=false,writeBuffer=10240,connectTimeout=1000,connectRetry=1;" };
                 //option.EnableTimer = true;
                 //option.TimerDelay = 5 * 1000;
                 option.ClientAuthorization = true;
                 option.ClientRateLimit = true;
             })
-            .AddAdministration("/CustomOcelot", options);
+            .AddAdministration("/CustomOcelot", gatewayoptions);
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

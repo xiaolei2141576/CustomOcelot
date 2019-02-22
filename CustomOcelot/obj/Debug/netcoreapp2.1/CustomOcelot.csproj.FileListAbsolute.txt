@@ -18,9 +18,9 @@ G:\myproject\gateway\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.pdb
 G:\myproject\CustomOcelot\CustomOcelot\bin\Debug\netcoreapp2.1\CustomOcelot.deps.json
 G:\myproject\CustomOcelot\CustomOcelot\bin\Debug\netcoreapp2.1\CustomOcelot.dll
 G:\myproject\CustomOcelot\CustomOcelot\bin\Debug\netcoreapp2.1\CustomOcelot.pdb
-G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.csprojAssemblyReference.cache
 G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.csproj.CoreCompileInputs.cache
 G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.AssemblyInfoInputs.cache
 G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.AssemblyInfo.cs
 G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.dll
 G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.pdb
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp2.1\CustomOcelot.csprojAssemblyReference.cache
