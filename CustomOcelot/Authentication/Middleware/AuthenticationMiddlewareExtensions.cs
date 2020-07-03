@@ -1,4 +1,4 @@
-﻿using Ocelot.Middleware.Pipeline;
+﻿using Microsoft.AspNetCore.Builder;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +10,7 @@ namespace CustomOcelot.Authentication.Middleware
     /// </summary>
     public static class AuthenticationMiddlewareExtensions
     {
-        public static IOcelotPipelineBuilder UseAuthenticationMiddleware(this IOcelotPipelineBuilder builder)
+        public static IApplicationBuilder UseAuthenticationMiddleware(this IApplicationBuilder builder)
         {
             return builder.UseMiddleware<AuthenticationMiddleware>();
         }

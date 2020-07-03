@@ -8,7 +8,6 @@ using Ocelot.Errors.Middleware;
 using Ocelot.Headers.Middleware;
 using Ocelot.LoadBalancer.Middleware;
 using Ocelot.Middleware;
-using Ocelot.Middleware.Pipeline;
 using Ocelot.RateLimit.Middleware;
 using Ocelot.Request.Middleware;
 using Ocelot.Requester.Middleware;

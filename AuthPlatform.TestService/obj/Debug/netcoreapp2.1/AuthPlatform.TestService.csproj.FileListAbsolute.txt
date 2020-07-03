@@ -26,3 +26,7 @@ G:\myproject\CustomOcelot\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthP
 G:\myproject\CustomOcelot\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.RazorTargetAssemblyInfo.cache
 G:\myproject\CustomOcelot\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.dll
 G:\myproject\CustomOcelot\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.pdb
+G:\myproject\CustomOcelot\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\appsettings.Development.json
+G:\myproject\CustomOcelot\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\appsettings.json
+G:\myproject\CustomOcelot\AuthPlatform.TestService\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+G:\myproject\CustomOcelot\AuthPlatform.TestService\obj\Debug\netcoreapp2.1\AuthPlatform.TestService.genruntimeconfig.cache

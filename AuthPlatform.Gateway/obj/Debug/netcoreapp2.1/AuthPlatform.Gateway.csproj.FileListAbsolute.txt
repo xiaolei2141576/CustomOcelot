@@ -32,3 +32,7 @@ G:\myproject\CustomOcelot\AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\AuthPlatf
 G:\myproject\CustomOcelot\AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\AuthPlatform.Gateway.csproj.CopyComplete
 G:\myproject\CustomOcelot\AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\AuthPlatform.Gateway.dll
 G:\myproject\CustomOcelot\AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\AuthPlatform.Gateway.pdb
+G:\myproject\CustomOcelot\AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\appsettings.Development.json
+G:\myproject\CustomOcelot\AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\appsettings.json
+G:\myproject\CustomOcelot\AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+G:\myproject\CustomOcelot\AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\AuthPlatform.Gateway.genruntimeconfig.cache

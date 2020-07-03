@@ -7,7 +7,7 @@ namespace CustomOcelot.Errors
 {
     public class RateLimitOptionsError : Error
     {
-        public RateLimitOptionsError(string message) : base(message, OcelotErrorCode.RateLimitOptionsError)
+        public RateLimitOptionsError(string message, int httpStatusCode) : base(message, OcelotErrorCode.RateLimitOptionsError, httpStatusCode)
         {
 
         }

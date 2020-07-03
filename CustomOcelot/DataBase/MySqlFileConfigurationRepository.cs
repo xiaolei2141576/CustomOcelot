@@ -65,10 +65,10 @@ namespace CustomOcelot.DataBase
                     var routeresult = (await connection.QueryAsync<AhphReRoute>(routesql, new { result.AhphId }))?.AsList();
                     if (routeresult != null && routeresult.Count > 0)
                     {
-                        var reroutelist = new List<FileReRoute>();
+                        var reroutelist = new List<FileRoute>();
                         foreach (var model in routeresult)
                         {
-                            var m = new FileReRoute();
+                            var m = new FileRoute();
                             if (!string.IsNullOrEmpty(model.AuthenticationOptions))
                             {
                                 m.AuthenticationOptions = model.AuthenticationOptions.ToObject<FileAuthenticationOptions>();
@@ -105,7 +105,7 @@ namespace CustomOcelot.DataBase
                             m.UpstreamPathTemplate = model.UpstreamPathTemplate;
                             reroutelist.Add(m);
                         }
-                        file.ReRoutes = reroutelist;
+                        file.Routes = reroutelist;
                     }
                 }
                 else
@@ -114,7 +114,7 @@ namespace CustomOcelot.DataBase
                 }
             }
             #endregion
-            if (file.ReRoutes == null || file.ReRoutes.Count == 0)
+            if (file.Routes == null || file.Routes.Count == 0)
             {
                 return new OkResponse<FileConfiguration>(null);
             }

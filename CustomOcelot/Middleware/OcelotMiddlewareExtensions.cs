@@ -6,7 +6,6 @@ using Ocelot.Configuration.Creator;
 using Ocelot.Configuration.Repository;
 using Ocelot.Logging;
 using Ocelot.Middleware;
-using Ocelot.Middleware.Pipeline;
 using Ocelot.Responses;
 using System;
 using System.Collections.Generic;
@@ -44,12 +43,8 @@ namespace CustomOcelot.Middleware
 
         private static IApplicationBuilder CreateOcelotPipeline(IApplicationBuilder builder, OcelotPipelineConfiguration pipelineConfiguration)
         {
-            var pipelineBuilder = new OcelotPipelineBuilder(builder.ApplicationServices);
-
             //使用自定义管道扩展
-            pipelineBuilder.BuildOcelotPipeline(pipelineConfiguration); 
-
-            var firstDelegate = pipelineBuilder.Build();
+            builder.BuildOcelotPipeline(pipelineConfiguration); 
 
             /*
             inject first delegate into first piece of asp.net middleware..maybe not like this
@@ -58,13 +53,6 @@ namespace CustomOcelot.Middleware
             */
 
             builder.Properties["analysis.NextMiddlewareName"] = "TransitionToOcelotMiddleware";
-
-            builder.Use(async (context, task) =>
-            {
-                var downstreamContext = new DownstreamContext(context);
-                await firstDelegate.Invoke(downstreamContext);
-            });
-
             return builder;
         }
 

@@ -1,0 +1,13 @@
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\CustomOcelot.AssemblyInfoInputs.cache
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\CustomOcelot.AssemblyInfo.cs
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\CustomOcelot.csproj.CoreCompileInputs.cache
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\CustomOcelot.csprojAssemblyReference.cache
+G:\myproject\CustomOcelot\CustomOcelot\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\CustomOcelot.RazorTargetAssemblyInfo.cache
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\staticwebassets\CustomOcelot.StaticWebAssets.Manifest.cache
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\staticwebassets\CustomOcelot.StaticWebAssets.xml
+G:\myproject\CustomOcelot\CustomOcelot\bin\Debug\netcoreapp3.1\CustomOcelot.deps.json
+G:\myproject\CustomOcelot\CustomOcelot\bin\Debug\netcoreapp3.1\CustomOcelot.dll
+G:\myproject\CustomOcelot\CustomOcelot\bin\Debug\netcoreapp3.1\CustomOcelot.pdb
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\CustomOcelot.dll
+G:\myproject\CustomOcelot\CustomOcelot\obj\Debug\netcoreapp3.1\CustomOcelot.pdb

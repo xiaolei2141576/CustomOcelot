@@ -14,10 +14,10 @@ namespace CustomOcelot.Authentication.Middleware
 {
     public class AuthenticationMiddleware : OcelotMiddleware
     {
-        private readonly OcelotRequestDelegate _next;
+        private readonly RequestDelegate _next;
         private readonly OcelotConfiguration _options;
         private readonly IAuthenticationProcessor _ahphAuthenticationProcessor;
-        public AuthenticationMiddleware(OcelotRequestDelegate next,
+        public AuthenticationMiddleware(RequestDelegate next,
             IOcelotLoggerFactory loggerFactory,
             IAuthenticationProcessor ahphAuthenticationProcessor,
             OcelotConfiguration options)
@@ -28,9 +28,10 @@ namespace CustomOcelot.Authentication.Middleware
             _options = options;
         }
 
-        public async Task Invoke(DownstreamContext context)
+        public async Task Invoke(HttpContext context)
         {
-            if (!context.IsError && context.HttpContext.Request.Method.ToUpper() != "OPTIONS" && IsAuthenticatedRoute(context.DownstreamReRoute))
+            var downstreamRoute = context.Items.DownstreamRoute();
+            if (context.Request.Method.ToUpper() != "OPTIONS" && IsAuthenticatedRoute(downstreamRoute))
             {
                 if (!_options.ClientAuthorization)
                 {
@@ -39,11 +40,11 @@ namespace CustomOcelot.Authentication.Middleware
                 }
                 else
                 {
-                    Logger.LogInformation($"{context.HttpContext.Request.Path} 是认证路由. {MiddlewareName} 开始校验授权信息");
+                    Logger.LogInformation($"{context.Request.Path} 是认证路由. {MiddlewareName} 开始校验授权信息");
                     #region 提取客户端ID
                     var clientId = "client_cjy";
-                    var path = context.DownstreamReRoute.UpstreamPathTemplate.OriginalValue; //路由地址
-                    var clientClaim = context.HttpContext.User.Claims.FirstOrDefault(p => p.Type == _options.ClientKey);
+                    var path = context.Items.DownstreamRoute().UpstreamPathTemplate.OriginalValue; //路由地址
+                    var clientClaim = context.User.Claims.FirstOrDefault(p => p.Type == _options.ClientKey);
                     if (!string.IsNullOrEmpty(clientClaim?.Value))
                     {//从Claims中提取客户端id
                         clientId = clientClaim?.Value;
@@ -56,9 +57,9 @@ namespace CustomOcelot.Authentication.Middleware
                     else
                     {
                         //未授权直接返回错误
-                        var error = new UnauthenticatedError($"请求认证路由 {context.HttpContext.Request.Path}客户端未授权");
-                        Logger.LogWarning($"路由地址 {context.HttpContext.Request.Path} 自定义认证管道校验失败. {error}");
-                        SetPipelineError(context, error);
+                        var error = new UnauthenticatedError($"请求认证路由 {context.Request.Path}客户端未授权");
+                        Logger.LogWarning($"路由地址 {context.Request.Path} 自定义认证管道校验失败. {error}");
+                        context.Items.SetError(error);
                     }
                 }
             }
@@ -68,7 +69,7 @@ namespace CustomOcelot.Authentication.Middleware
             }
 
         }
-        private static bool IsAuthenticatedRoute(DownstreamReRoute reRoute)
+        private static bool IsAuthenticatedRoute(DownstreamRoute reRoute)
         {
             return reRoute.IsAuthenticated;
         }

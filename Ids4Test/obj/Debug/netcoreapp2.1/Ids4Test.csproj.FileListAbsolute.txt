@@ -29,3 +29,7 @@ G:\myproject\CustomOcelot\Ids4Test\obj\Debug\netcoreapp2.1\Ids4Test.RazorTargetA
 G:\myproject\CustomOcelot\Ids4Test\obj\Debug\netcoreapp2.1\Ids4Test.csproj.CopyComplete
 G:\myproject\CustomOcelot\Ids4Test\obj\Debug\netcoreapp2.1\Ids4Test.dll
 G:\myproject\CustomOcelot\Ids4Test\obj\Debug\netcoreapp2.1\Ids4Test.pdb
+G:\myproject\CustomOcelot\Ids4Test\bin\Debug\netcoreapp2.1\appsettings.Development.json
+G:\myproject\CustomOcelot\Ids4Test\bin\Debug\netcoreapp2.1\appsettings.json
+G:\myproject\CustomOcelot\Ids4Test\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+G:\myproject\CustomOcelot\Ids4Test\obj\Debug\netcoreapp2.1\Ids4Test.genruntimeconfig.cache

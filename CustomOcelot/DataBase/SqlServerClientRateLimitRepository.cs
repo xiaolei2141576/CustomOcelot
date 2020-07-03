@@ -1,6 +1,7 @@
 ﻿using CustomOcelot.Configuration;
 using CustomOcelot.RateLimit;
 using Dapper;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -24,7 +25,7 @@ namespace CustomOcelot.DataBase
         /// <returns></returns>
         public async Task<(bool RateLimit, List<ClientRateLimitOptions> rateLimitOptions)> CheckClientRateLimitAsync(string clientid, string path)
         {
-            using (var connection = new SqlConnection(_options.DbConnectionStrings))
+            using (var connection = new MySqlConnection(_options.DbConnectionStrings))
             {
                 string sql = @"SELECT DISTINCT UpstreamPathTemplate AS RateLimitPath,LimitPeriod AS Period,LimitNum AS Limit,ClientId FROM AhphReRoute T1 INNER JOIN AhphReRouteLimitRule T2 ON T1.ReRouteId=T2.ReRouteId
                 INNER JOIN AhphLimitRule T3 ON T2.RuleId=T3.RuleId INNER JOIN AhphLimitGroupRule T4 ON

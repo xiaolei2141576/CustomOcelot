@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "p1Ojy4P0cas7JSnbtRKFvYwvtwofziD4aEWIMA8ftd2JtuOuSSlUZNel2LIC5bA29FVV4H9/AMS53WYJhSefow==",
+  "success": true,
+  "projectFilePath": "G:\\myproject\\CustomOcelot\\AuthPlatform.TestService\\AuthPlatform.TestService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.1.2\\microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

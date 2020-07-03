@@ -30,10 +30,6 @@ namespace CustomOcelot.Middleware
             //配置信息
             builder.Services.AddSingleton(
                 resolver => resolver.GetRequiredService<IOptions<OcelotConfiguration>>().Value);
-            //配置文件仓储注入使用sqlserver
-            builder.Services.AddSingleton<IFileConfigurationRepository, SqlServerFileConfigurationRepository>();
-            builder.Services.AddSingleton<IClientAuthenticationRepository, SqlServerClientAuthenticationRepository>();
-            builder.Services.AddSingleton<IClientRateLimitRepository, SqlServerClientRateLimitRepository>();
             //注册后端服务
             builder.Services.AddHostedService<DbConfigurationPoller>();
             //使用Redis重写缓存
@@ -60,9 +56,23 @@ namespace CustomOcelot.Middleware
         /// <returns></returns>
         public static IOcelotBuilder UseMySql(this IOcelotBuilder builder)
         {
+            //配置文件仓储注入使用mysql
             builder.Services.AddSingleton<IFileConfigurationRepository, MySqlFileConfigurationRepository>();
             builder.Services.AddSingleton<IClientAuthenticationRepository, MySqlClientAuthenticationRepository>();
             builder.Services.AddSingleton<IClientRateLimitRepository, MySqlClientRateLimitRepository>();
+            return builder;
+        }
+        /// <summary>
+        /// 扩展使用Mysql存储。
+        /// </summary>
+        /// <param name="builder"></param>
+        /// <returns></returns>
+        public static IOcelotBuilder UseSqlServer(this IOcelotBuilder builder)
+        {
+            //配置文件仓储注入使用sqlserver
+            builder.Services.AddSingleton<IFileConfigurationRepository, SqlServerFileConfigurationRepository>();
+            builder.Services.AddSingleton<IClientAuthenticationRepository, SqlServerClientAuthenticationRepository>();
+            builder.Services.AddSingleton<IClientRateLimitRepository, SqlServerClientRateLimitRepository>();
             return builder;
         }
     }
